@@ -17,9 +17,9 @@ const sequelize = new Sequelize(
 async function syncDatabase() {
   try {
     await sequelize.sync({ alter: true }); // Cambia a { force: true } si quieres borrar la tabla y recrearla
-    console.log('✅ Database synchronized');
+    console.log(' Database synchronized');
   } catch (error) {
-    console.error('❌ Error syncing database:', error);
+    console.error(' Error syncing database:', error);
   }
 }
 

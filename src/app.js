@@ -9,4 +9,5 @@ app.use(express.json());
 // Configuración de rutas con prefijo `/api`
 app.use('/api', routes);
 
+
 module.exports = app;
